@@ -17,7 +17,7 @@ hledat čtverečkovaný papír. Přejeme vám hodně zábavy!
 }
 
 html {
-    height: 100%;
+    height: 100%; //nastavení obrazovky, aby se mi pozadi neopakovalo
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     background: linear-gradient(#615dad, #ffc8da);
@@ -40,17 +40,10 @@ img{
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    margin: auto; 
-    margin-top: 50px;
+    margin: auto;                   //vycentrovani na stred z leva a zprava
+    margin-top: 50px;               //odsazeni od vrsku obrazovk
     border-top-right-radius: 2%;
     border-top-left-radius: 2%;
-}
-
-.button{
-    color: #ffffff;
-    border: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .rules{
@@ -70,10 +63,11 @@ img{
 }
 
 a {
+    //zakladni text a text na tlacitkach
     font-family: 'Open Sans', sans-serif;
     color: #ffffff;
     text-decoration: none;
     font-size: 16px;
     line-height: 1.6;
-    padding: 0px 30px 30px 30px;
+    padding: 15px 30px 15px 30px;
 }
