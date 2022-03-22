@@ -26,12 +26,13 @@ html {
 h1{
     font-family: 'Lobster', cursive;
     font-size: 40px;
+    margin-bottom: 0px;
     
 }
 
-img{
-    border-top-right-radius: 2%;
-    border-top-left-radius: 2%;
+.window, img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .window {
@@ -42,8 +43,6 @@ img{
     flex-direction: column;
     margin: auto;                   //vycentrovani na stred z leva a zprava
     margin-top: 50px;               //odsazeni od vrsku obrazovk
-    border-top-right-radius: 2%;
-    border-top-left-radius: 2%;
 }
 
 .rules{
@@ -56,6 +55,7 @@ img{
 
 .play{
     background-color: #0197f6;
+    border-top: 2px solid #283e50;
 }
 
 .play:hover {
@@ -63,7 +63,6 @@ img{
 }
 
 a {
-    //zakladni text a text na tlacitkach
     font-family: 'Open Sans', sans-serif;
     color: #ffffff;
     text-decoration: none;
