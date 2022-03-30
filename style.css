@@ -20,7 +20,7 @@ html {
     height: 100%; //nastavení obrazovky, aby se mi pozadi neopakovalo
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    background: linear-gradient(#615dad, #ffc8da);
+    background: linear-gradient(#615dad, #ffc8da) no-repeat fixed;
 }
 
 h1{
@@ -35,7 +35,7 @@ h1{
     border-top-left-radius: 10px;
 }
 
-.window {
+.window, .windowRules{
     width: 400px;
     background-color: #283e50;
     color: #ffffff;
@@ -87,8 +87,19 @@ figure {
   
 figcaption {
     font-family: 'Open Sans', sans-serif;
-    padding: 2px;
+    margin: 4px 20px 40px 20px;
     text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+img{
+    width: 350px;
+}
+
+.uvodniImg{
+    width: 400px;
 }
 
 .icon{
@@ -97,6 +108,19 @@ figcaption {
     height: 1em;
 }
 
-@media (min-width = 600px){
+@media (min-width: 640px){
+ 
+    .windowRules{
+        width: 800px;
+    }
 
-}
+    .instruction{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    figure{
+        width: calc(50% - 40px);
+        margin: 0px 20px 0px 20px;
+    }
+
+    
