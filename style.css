@@ -45,11 +45,16 @@ h1{
     margin-top: 100px;               //odsazeni od vrsku obrazovk
 }
 
-.rules{
+.play__screen{
+    color: #ffffff;
+    max-width: 80vmin;
+}
+
+.rules, .btn__home{
     background-color: #1fcca4;
 }
 
-.rules:hover{
+.rules:hover, .btn__home:hover{
     background-color: #1cbb96;
 }
 
@@ -58,7 +63,11 @@ h1{
     border-top: 2px solid #283e50;
 }
 
-.play:hover {
+.btn__play{
+    background-color: #0197f6;
+}
+
+.play:hover, .btn__play:hover {
     background-color: #0090e9;
 }
 
@@ -102,11 +111,7 @@ img{
     width: 400px;
 }
 
-.icon{
-    filter: invert(100%);
-    width: 1em;
-    height: 1em;
-}
+
 
 @media (min-width: 640px){
  
@@ -122,5 +127,66 @@ img{
         width: calc(50% - 40px);
         margin: 0px 20px 0px 20px;
     }
+}
 
+
+/* Nastylování stránky Play */
+
+.play__screen{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 60vmin;
     
+}
+
+.btn__home, .btn__play {
+    border-radius: 5px;
+    width: 2rem;
+    padding: 3px;    
+}
+
+.screen__icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.icon{
+    filter: invert(100%);
+    width: 0.8em;
+    height: 0.8em;
+}
+
+.icons--player{
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.icons--menu a{
+    padding: 0px;
+}
+
+
+.screen__field{
+    display: flex;
+    justify-content: row;
+    flex-wrap: wrap;
+    max-width: 60vmin;
+    border: 1px solid black;
+}
+
+button{
+    width: 10%;
+    aspect-ratio: 1/1;
+    margin: 0;
+    padding: 0;
+    opacity: 0.6;
+    border: 2px solid black;
+    border-radius: 0px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
