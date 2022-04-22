@@ -175,18 +175,33 @@ img{
     flex-wrap: wrap;
     max-width: 60vmin;
     border: 1px solid black;
+    //opacity: 0.8;
 }
 
 button{
+
+    background-color: #dfb3d1;
     width: 10%;
     aspect-ratio: 1/1;
     margin: 0;
     padding: 0;
-    opacity: 0.6;
     border: 2px solid black;
     border-radius: 0px;
-}
+    opacity: 0.6;
+    background-size: 30%;
+    }
 
 button:hover {
-    opacity: 0.8;
+    opacity: 1;
+    border-radius: 5px;
 }
+
+.zahrany_tah{
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+    transition: background-size 0.15s;
+
+}
+
