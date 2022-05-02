@@ -205,3 +205,11 @@ button:hover {
 
 }
 
+.play__btn--cross{
+    background-image: url("img/cross.svg");
+}
+.play__btn--circle{
+    background-image: url("img/circle.svg");
+}
+
+
