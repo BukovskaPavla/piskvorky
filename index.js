@@ -11,13 +11,13 @@ const udelejTah = (e) => {
 
     if(isWinningMove(e.target)){
            if (player === 'cross') {
-            confirm('Kolečko vyhrává! Spustit novou hru?');
-            if (confirm == true){
-                location.reload()
+			const confrimCross = confirm('Kolečko vyhrává! Spustit novou hru?')
+            if (confrimCross == true){
+				location.reload()
             }
           } else {
-            confirm('Křížek vyhrává! Spustit novou hru?');
-            if (confirm == true){
+            const confrimCircle = confirm('Křížek vyhrává! Spustit novou hru?')
+            if (confrimCircle == true){
                 location.reload()
             }
           }
